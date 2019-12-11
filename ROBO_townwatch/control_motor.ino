@@ -1,4 +1,18 @@
-
+void left(){
+   do{ read_sensor_F(); Motor(-c_l,c_l); } while(A0>200);Motor(-c_l,c_l,5);
+                    do{ read_sensor_F(); Motor(-c_l,c_l);  } while(A2>200);            
+                    Motor(50,-50,15);
+                    Motor(0,0,2);  
+  
+}
+void right(){
+    do{ read_sensor_F(); Motor(c_r,-c_r); } while(A7>200); Motor(c_r,-c_r,5);
+                      do{ read_sensor_F(); Motor(c_r,-c_r);  } while(A5>200);            
+            
+                      Motor(-50,50,15);
+                      Motor(0,0,2);  
+  
+}
 
    
 void TL()///////////////////////ใช้เลี้ยวซ้าย  

@@ -14,6 +14,14 @@ myservoB0.attach(PB0);
 myservoB1.attach(PB1);
 }
 
+
+void keep(){
+   myservoB0.write(30); 
+   myservoB1.write(150);            
+            delay(100);
+}
+
+
 void S_down() 
 {
   

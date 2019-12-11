@@ -136,7 +136,10 @@ void setup() {
         delay(200);
         display.clearDisplay();
         delay(50);
-  
+   S_UP(); 
+   
+   servo_kang();
+   keep() ;
  
   while(digitalRead(PC14)==HIGH){read_display_spi_2color();}
   
@@ -144,13 +147,12 @@ void setup() {
 
 //เขียนโค๊ดที่นี้
 ////////////////////////////////////////////
- 
-   fline_t (30 ,30,5, 10,15,1500 ); 
-   /*fline (40 ,40,5, 10, 'c','r',15 ); 
-   fline (40 ,40,5, 10, 'c','r',15 ); 
-   fline (40 ,40,5, 10, 'c','l',15 ); 
-   fline (40 ,40,5, 10, 'c','r',15 ); 
-   fline (40 ,40,5, 10, 'c','r',15 ); */
+  ch_fA();
+   /*Motor(30,30);
+   delay(100000);*/
+   //fline_t (30 ,30,5, 10,15,1500 ); 
+   //fline (60 ,60,5, 10, 'c','l',15 ); 
+  
   // do{ read_sensor_F(); Motor(-30,-30); } while(A0>200);Motor(20,20,4); Motor(0,0,5); 
 /*
 read_sensor_B();

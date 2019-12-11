@@ -397,7 +397,7 @@ void read_display_spi_2color()
         display.println(Z7,DEC);
         display.setCursor(80, 56);        
         display.print("spR:");
-         display.println(color_spi_tr);
+        display.println(color_spi_tr);
 
         display.display();
         delay(200);
